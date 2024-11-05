@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMAGES/tracking-icon.png">
+    <link rel="stylesheet" href="../CSS/styleOrderTracking.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Rastreo de Pedido</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #ffffff;">
+            <a class="navbar-brand" href="../index.html"><img src="../IMAGES/logo.png" width="200px" style="margin-left: 0.5rem;"></a>
+            <ul class="nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./acercade.html">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                <a href="./sobrenosotros.html" class="nav-link">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a href="./login.html" class="nav-link">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./orderTracking.html" class="track-link">
+                        <img src="../IMAGES/tracking-icon.png" alt="Ícono de rastreo" class="icon"> 
+                        Rastrea tu producto aquí
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container mt-5">
+            <h2>Rastreo de Pedido</h2>
+            <form id="trackingForm">
+                <div class="form-group">
+                    <label for="orderNumber">Número de Pedido:</label>
+                    <input type="text" id="orderNumber" class="form-control" placeholder="Ingresa tu número de pedido" required>
+                </div>
+                <button type="button" id="trackButton" class="btn btn-success" onclick="trackOrder()" disabled>Rastrear Pedido</button>
+            </form>
+            
+            <div id="statusMessage" class="status" style="display: none;"></div>
+        
+            <div class="review-section" style="display: none;">
+                <h3>Califica tu Pedido</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="rating">Calificación (1-5):</label>
+                        <select id="rating" class="form-control" required>
+                            <option value="">Selecciona una calificación</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Escribe tu reseña:</label>
+                        <textarea id="review" class="form-control" rows="3" placeholder="Escribe aquí tu reseña" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="submitReview()">Enviar Reseña</button>
+                </form>
+                <strong id="reviewMessage" style="display: none;"></strong>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../JS/trackingOrder.js"></script>
+</html>

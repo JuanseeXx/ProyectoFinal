@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./IMAGES/logoCabecera.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Latte Lugar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #ffffff;">
+            <a class="navbar-brand" href="index.html"><img src="./IMAGES/logo.png" width="200px" style="margin-left: 0.5rem;"></a>
+            <ul class="nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#sec-domicilio">Menú</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#mapa">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./HTML/acercade.html">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                <a href="./HTML/sobrenosotros.html" class="nav-link">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a href="./HTML/login.html" class="nav-link">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./HTML/orderTracking.html" class="track-link">
+                        <img src="./IMAGES/tracking-icon.png" alt="Ícono de rastreo" class="icon"> 
+                        Rastrea tu producto aquí
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cover d-flex justify-content-center align-items-center flex-column">
+            <h1>
+                Latte Lugar
+            </h1>
+            <p>
+                El aroma que despierta sonrisas, el sabor que crea momentos.
+            </p>
+            <button type="button" class="btn btn-outline-success">
+                Conoce más
+            </button>
+        </div>
+    </header>
+    <section style="overflow-x: hidden;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="container mt-5 mb-5">
+                    <div class="card">
+                        <div class="cover cover-small" style="background-image: url(./IMAGES/rsz_1rodrigo-flores-sn87tq_o7zs-unsplash.jpg);"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Cultivo Ecológico Responsable</h5>
+                        <p class="card-text">Trabajamos con caficultores responsables que usan tratamientos ecológicos para cultivar granos de café de alta calidad y sostenibles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="container mt-5 mb-5">
+                    <div class="card">
+                        <div class="cover cover-small" style="background-image: url(./IMAGES/pariwat-pannium-10lCujnC8LU-unsplash.jpeg);"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Comercio Justo</h5>
+                        <p class="card-text">Adquirir café en Latte Lugar significaque tu dinero va directamente y de manera responsable a los caficultoresy comunidades locales, promoviendo 
+                            prácticas comerciales justas y apoyando el desarrollo económico en las regiones cafetaleras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="container mt-5 mb-5">
+                    <div class="card">
+                        <div class="cover cover-small" style="background-image: url(./IMAGES/nathan-dumlao-zUNs99PGDg0-unsplash.jpeg);"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Pasión por el Café</h5>
+                        <p class="card-text">Nos apasiona el café por lo que siempre trabajamos para servirte café de calidad que no solo sea delicioso, sino también ético y sostenible, desde el grano hasta la taza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section><!--style="background-color: #f1f1f1;"!--> 
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-5" style="margin-top: 30px">
+                    <img src="./IMAGES/CoffeeDoddle.svg" alt="">
+                </div>
+                <div class="col-12 col-sm-6" style="margin-top: 30px">
+                    <h3>¡Inicia tu día con una buena taza de café!</h3>
+                    <p>Ordena tu Café Latte a Domicilio o busca el Lugar más cercano</p>
+                    <a class="ir-a-mapa" href="#mapa">Ir al Mapa</a>
+                </div>
+            </div>
+            <form action="">
+                <label for="email">Correo Electrónico</label>
+                    <div class="d-flex">
+                        <div class="flex-fill mr-2" style="margin-bottom: 30px;">
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <button type="button" style="margin-bottom: 30px;" class="btn btn-success">Enviar</button>
+                    </div>
+            </form>
+        </div>
+    </section>
+    <section  id="sec-domicilio">
+        <div class="domicilios d-flex justify-content-center align-items-center flex-column">
+            <h1>
+                PIDE TU CAFÉ A DOMICILIO
+            </h1>
+        </div>
+        <div class="container mt-5 mb-5" id="stripe">
+            <div class="product-stripe">
+                <div class="stripe-container">
+                    <div class="cardCoffe">
+                        <div title="Taza de espresso" class="cover cover-small" style="background-image: url(./IMAGES/coffe1.jpg);"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Espresso</h4>
+
+                            <div class="item-details">
+                                <h6 class="item-price">$5500 COP</h6>
+                                <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="cardCoffe">
+                        <div title="Cafe Americano" class="cover cover-small" style="background-image: url(./IMAGES/coffe2.jpeg);"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Café Americano</h4>
+    
+                            <div class="item-details">
+                                <h6 class="item-price">$8500 COP</h6>
+                                <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardCoffe">
+                        <div title="Taza de Latte" class="cover cover-small" style="background-image: url(./IMAGES/coffe3.jpg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Latte</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$11500 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="cardCoffe">
+                        <div title="Cafe Mocha" class="cover cover-small" style="background-image: url(./IMAGES/coffe4.jpg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Mocha</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$15900 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--NUEVAS TARJETAS-->
+
+                    <div class="cardCoffe">
+                        <div title="Tinto" class="cover cover-small" style="background-image: url(./IMAGES/coffe5.jpg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Tinto</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$2000 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="cardCoffe">
+                        <div title="Macchiato" class="cover cover-small" style="background-image: url(./IMAGES/coffe6.jpg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Macchiato</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$8000 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="cardCoffe">
+                        <div title="Café Irlandés" class="cover cover-small" style="background-image: url(./IMAGES/coffe7.jpg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Café Irlandés</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$14900 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="cardCoffe">
+                        <div title="Café Árabe" class="cover cover-small" style="background-image: url(./IMAGES/coffe8.jpeg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Café Árabe</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$16900 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="cardCoffe">
+                        <div title="Café Cortado" class="cover cover-small" style="background-image: url(./IMAGES/coffe9.jpg);"></div>
+                        <div class="card-body">
+                        <h4 class="card-title">Café Cortado</h4>
+        
+                        <div class="item-details">
+                            <h6 class="item-price">$10900 COP</h6>
+                            <button class="btn btn-success addToCart">AÑADIR AL CARRITO</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--TOTAL DE COMPRA-->
+
+        <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">INGRESE LOS SIGUIENTES DATOS PARA EL ENVIO DE SU COMPRA</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="box">
+                            <form id="purchaseForm" action="">
+                                <fieldset>
+                                    <legend><b>INGRESE SUS DATOS</b></legend>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nombre" required>
+                                        <div id="nameError" class="error" style="display: none; color: red;">Por favor, ingresa tu nombre.</div>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="text" name="apellidos" id="apellidos" class="inputUser" placeholder="Apellidos" required>
+                                        <div id="surnameError" class="error" style="display: none; color: red;">Por favor, ingresa tus apellidos.</div>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="text" name="email" id="email" class="inputUser" placeholder="Email (opcional)">
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Teléfono" required>
+                                        <div id="phoneError" class="error" style="display: none; color: red;">Por favor, ingresa tu teléfono.</div>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Ciudad" required>
+                                        <div id="cityError" class="error" style="display: none; color: red;">Por favor, ingresa tu ciudad.</div>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="text" name="direccion" id="direccion" class="inputUser" placeholder="Dirección" required>
+                                        <div id="addressError" class="error" style="display: none; color: red;">Por favor, ingresa tu dirección.</div>
+                                    </div>
+                                    <br>
+                                    <label for="paymentMethod" style="color: black;">Método de Pago:</label>
+                                    <select id="paymentMethod" name="paymentMethod" required onchange="toggleCardInput()" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                                        <option value="" disabled selected>Selecciona un método de pago</option>
+                                        <option value="efectivo">Efectivo</option>
+                                        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                                    </select>
+                                    <br><br>
+                                    <div id="cardInfo" style="display: none; color: black;">
+                                        <h6>Información de la Tarjeta</h6>
+                                        <input type="text" name="cardNumber" id="cardNumber" class="inputUser" placeholder="Número de Tarjeta" required>
+                                        <div id="cardNumberError" class="error" style="display: none; color: red;">Por favor, ingresa el número de la tarjeta.</div>
+                                        <input type="text" name="cardName" id="cardName" class="inputUser" placeholder="Nombre en la Tarjeta" required>
+                                        <div id="cardNameError" class="error" style="display: none; color: red;">Por favor, ingresa el nombre en la tarjeta.</div>
+                                        <input type="text" name="expiryDate" id="expiryDate" class="inputUser" placeholder="Fecha de Expiración (MM/AA)" required>
+                                        <div id="expiryDateError" class="error" style="display: none; color: red;">Por favor, ingresa la fecha de expiración.</div>
+                                        <input type="text" name="cvv" id="cvv" class="inputUser" placeholder="CVV" required>
+                                        <div id="cvvError" class="error" style="display: none; color: red;">Por favor, ingresa el CVV.</div>
+                                    </div>
+                                    <br>
+                                    <textarea id="comment" name="comment" cols="62" rows="8" maxlength="100000" placeholder="Escribe tus comentarios aquí..."></textarea>
+                                    <br><br>
+                                    <input type="button" name="submit" id="submit" value="Completar Compra" onclick="completePurchase()" style="width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div id="textoPedido" style="text-align: center;">
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+
+        </div>
+
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+    <section>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4" style="justify-content: center">
+                    <img src="./IMAGES/FRASEE.jpeg" alt="" width="345px" style="border-radius: .25rem;">
+                </div>
+                <div class="col-12 col-sm-6" style="justify-content: center;">
+                    <h3>"La vida comienza después de un buen café."</h3>
+                    <br>
+                    <p>En nuestra cafetería, cada taza de café cuenta una historia. Es el aroma que despierta tus sentidos por la mañana, el calor reconfortante en tus manos durante una charla con amigos y el impulso necesario para seguir adelante. Aquí, no solo servimos café, sino que también ofrecemos momentos de pausa y conexión. Creemos que un buen café puede transformar tu día y llenarte de inspiración. Ven, siéntate y descubre cómo la magia de un café bien preparado puede hacer que cada día sea extraordinario.</p>
+                    <p>Además, nos enorgullece seleccionar cuidadosamente cada grano de café, colaborando con productores locales que comparten nuestra pasión por la calidad y la sostenibilidad. Cada sorbo de nuestras bebidas no solo te conecta con nosotros, sino también con las manos trabajadoras que cultivan y cosechan con esmero. Queremos que cada visita sea una oportunidad para descubrir nuevos sabores, explorar combinaciones únicas y disfrutar de ese momento especial que solo un buen café puede ofrecer. Aquí, en nuestra cafetería, cada día es una celebración de la artesanía y el amor por el café.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5 mb-5" id="mapa">
+            <h4>
+                ¡TE ESPERAMOS!
+            </h4>
+            <p>
+                Cra. 43A #5 A 113 LOCAL 121, El Poblado, Medellín, Antioquia
+            </p>
+            <div class="responsive-iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.427779904169!2d-75.57460702413834!3d6.207169426756672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468280287322e7%3A0x96842701e9846137!2sCra.%2043A%20%235a-113%20LOCAL%20121%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1730700064141!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4 class="title-foo">Teléfono</h4>
+                <p id="cw">+57 315 987 6215</p>
+            </div>
+            <div class="content-foo">
+                <h4 class="title-foo">Email</h4>
+                <p id="cw">contactLatteLugar@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4 class="title-foo">Location</h4>
+                <p id="cw">Cra. 43A #5 A 113 LOCAL 121, El Poblado, Medellín, Antioquia</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">© Juan Sebastian Diaz | Juan Pablo Arias | Santiago Sánchez Cano | Emanuel Rojas Ramirez</h2>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+
+    <script src="./JS/carrito.js"></script>
+</body>
+</html>

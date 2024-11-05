@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0em;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar{
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-link{
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+.nav-link:hover, .ir-a-mapa:hover{
+    color: #015905;
+    text-decoration: none;
+}
+
+.track-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    font-weight:500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+}
+
+.track-link:hover{
+    background-color: #3e8e41;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.track-link .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pending {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.canceled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.review-section {
+    margin-top: 30px;
+}
+
+#reviewMessage {
+    margin-top: 10px;
+}

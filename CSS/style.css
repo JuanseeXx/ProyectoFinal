@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin: 0em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar .nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.track-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    font-weight:500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+}
+
+.track-link:hover{
+    background-color: #3e8e41;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.track-link .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
+}
+
+.nav-link{
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+.nav-link:hover, .ir-a-mapa:hover{
+    color: #015905;
+    text-decoration: none;
+}
+
+.ir-a-mapa{
+    text-decoration: solid;
+    font-weight: 500;
+    color: #015905;
+}
+
+.cover{
+    height: 500px;
+    background-image: url(../IMAGES/fondoinicio.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+}
+
+.cover-small{
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(1,89,5,255), 0 2px 4px -1px rgba(0,0,0,0.01);
+    display: inline-block;
+    cursor: default;
+}
+
+.cardCoffe{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(1,89,5,255), 0 2px 4px -1px rgba(0,0,0,0.01);
+    display: inline-block;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cardCoffe:hover{
+    box-shadow: 5px 8px 12px 1px rgba(1,89,5,255), 5px 6px 8px 1px rgba(0,0,0,0.03);
+    transform: translateY(-3%);
+}
+
+.item-title{
+    min-height: 3rem;
+}
+
+.card-text{
+    min-height: 10rem;
+}
+
+.product-stripe, .slider{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slider{
+    overflow-x: hidden;
+}
+
+.slider-conteiner{
+    transform:translateX(0);
+    display: flex;
+}
+
+.stripe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stripe-container .card{
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stripe-container .cardCoffe{
+    width: 350px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.responsive-iframe{
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    overflow-x: hidden;
+}
+
+.slider-conteiner{
+    transform: translateX(0);
+    animation: slider 10s infinite;
+}
+
+.image-container{
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+@keyframes slider{
+    0%{
+        transform: translateX(0);
+    }
+
+    20%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(-100%);
+    }
+
+    45%{
+        transform: translateX(-100%);
+    }
+
+    50%{
+        transform: translateX(-200%);
+    }
+
+    70%{
+        transform: translateX(-200%);
+    }
+
+    75%{
+        transform: translateX(-300%);
+    }
+
+    95%{
+        transform: translateX(-300%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.titulo-final, .title-foo {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+#cw{
+    color: rgba(255, 255, 255, 0.863);
+}
+
+#cuenta-carrito{
+    background-color: #015905;
+    border-radius: 100%;
+    display: inline-block;
+    width:21px;
+    height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+}
+
+.badge1{
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .badge1 {
+        transition: none;
+    }
+}
+
+.badge1:hover{
+    cursor: pointer;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+  }
+
+  .item-details > .item-price {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-right: 1rem;
+  }
+
+/*NUEVA LINEA*/
+  
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+  }
+  
+  .item-details > .item-price {
+    margin: 0;
+  }
+  
+/* ? SHOPPING CART */
+
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+  
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+  
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+  
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+  
+.shopping-cart-total {
+    min-height: 96px;
+}
+
+.box{
+    color: white;
+    position: relative;
+    top: 50%;
+    padding: 15px;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: #015905;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: black;
+    border-bottom: 1px solid black;
+    border-radius: .1rem;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #000000;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: #015905;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-color: #015905;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(34, 107, 40), rgb(62, 141, 69));
+}
+
+#parrafoSN {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* centra el párrafo horizontalmente */
+    max-width: 800px;
+    text-align: justify; /*ajusta el texto para mejor alineación */
+}
+
+.text-centerSobreNosotros {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    color: #2a2a2a;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 4px #01a709;
+}
+
+h1.text-centerSobreNosotros, h2.text-centerSobreNosotros {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
