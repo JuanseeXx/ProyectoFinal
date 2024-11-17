@@ -76,7 +76,7 @@
                         <div class="cover cover-small" style="background-image: url(./IMAGES/pariwat-pannium-10lCujnC8LU-unsplash.jpeg);"></div>
                         <div class="card-body">
                         <h5 class="card-title">Comercio Justo</h5>
-                        <p class="card-text">Adquirir café en Latte Lugar significaque tu dinero va directamente y de manera responsable a los caficultoresy comunidades locales, promoviendo 
+                        <p class="card-text">Adquirir café en Latte Lugar significa que tu dinero va directamente y de manera responsable a los caficultores y comunidades locales, promoviendo 
                             prácticas comerciales justas y apoyando el desarrollo económico en las regiones cafetaleras.</p>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section><!--style="background-color: #f1f1f1;"!--> 
+    <section>
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-5" style="margin-top: 30px">
@@ -244,7 +244,7 @@
 
     <!--TOTAL DE COMPRA-->
 
-        <!-- START SECTION SHOPPING CART -->
+        <!-- INICIO DE LA SECCIÓN "CARRITO DE COMPRAS" -->
     <section class="shopping-cart">
         <div class="container">
             <h1 class="text-center">CARRITO</h1>
@@ -266,12 +266,12 @@
                     </div>
                 </div>
             </div>
-            <!-- ? START SHOPPING CART ITEMS -->
+            <!-- INICIO ARTÍCULOS DEL CARRITO DE COMPRAS -->
             <div class="shopping-cart-items shoppingCartItemsContainer">
             </div>
-            <!-- ? END SHOPPING CART ITEMS -->
+            <!-- FIN ARTÍCULOS DEL CARRITO DE COMPRAS -->
 
-            <!-- START TOTAL -->
+            <!-- INICIO TOTAL DE COMPRA -->
             <div class="row">
                 <div class="col-12">
                     <div class="shopping-cart-total d-flex align-items-center">
@@ -290,15 +290,15 @@
                                 Se aumentó correctamente la cantidad
                             </div>
                         </div>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                        <button id="comprarBtn" class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
                             data-target="#comprarModal">Comprar</button>
                     </div>
                 </div>
             </div>
 
-            <!-- END TOTAL -->
+            <!-- FIN TOTAL DE COMPRA -->
 
-            <!-- START MODAL COMPRA -->
+            <!-- INICIO DEL MODAL DE COMPRA -->
             <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -308,6 +308,12 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+
+                        <!-- Contenedor para mostrar los detalles del carrito -->
+                        <div id="cartDetails" style="padding: 15px; border: 1px solid #ccc; margin: 15px; border-radius: 5px;">
+                        <!-- Aquí se mostrarán los productos del carrito -->
+                        </div>
+
                         <div class="box">
                             <form id="purchaseForm" action="">
                                 <fieldset>
@@ -376,12 +382,12 @@
                     </div>
                 </div>
             </div>
-            <!-- END MODAL COMPRA -->
+            <!-- FIN DEL MODAL DE COMPRA-->
 
         </div>
 
     </section>
-    <!-- END SECTION SHOPPING CART -->
+    <!-- FIN DE LA SECCIÓN "CARRITO DE COMPRAS" -->
 
     <section>
         <div class="container mt-5 mb-5">
@@ -420,14 +426,14 @@
             </div>
             <div class="content-foo">
                 <h4 class="title-foo">Email</h4>
-                <p id="cw">contactLatteLugar@gmail.com</p>
+                <p id="cw">contactlattelugar@gmail.com</p>
             </div>
             <div class="content-foo">
                 <h4 class="title-foo">Location</h4>
                 <p id="cw">Cra. 43A #5 A 113 LOCAL 121, El Poblado, Medellín, Antioquia</p>
             </div>
         </div>
-        <h2 class="titulo-final">© Juan Sebastian Diaz | Juan Pablo Arias | Santiago Sánchez Cano | Emanuel Rojas Ramirez</h2>
+        <h2 class="titulo-final">© Juan Sebastián Díaz | Juan Pablo Arias | Santiago Sánchez Cano | Emanuel Rojas Ramirez</h2>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

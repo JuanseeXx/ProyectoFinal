@@ -15,5 +15,5 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
 function authenticateUser(email, password) {
     // Lógica para autenticar el usuario
-    return true; // Cambiamos según la lógica real
+    return true; // Cambiamos según la lógica
 }
